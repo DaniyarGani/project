@@ -1,37 +1,23 @@
 "use strict"
 
-// Conditions
+let num = 50; 
 
-// if  (1) {
-//     console.log('Ok!');
-// } else {
-//     console.log("Error");
+// while (num <= 55) {
+//     console.log(num);
+//     num++;
 // }
 
-
-// if (num < 49) {
-//     console.log('Error');
-// } else if (num > 100) {
-//     console.log('Много');
-// } else {
-//     console.log('Ok!');
+// do {
+//     console.log(num);
+//     num++;
 // }
+// while (num < 55);
 
-// (num === 50) ? console.log('Ok!') : console.log('Error'); // Ternar operator
+for (let i = 1; i < 8; i++) {
+    if (i === 6) {
+        // break;
+        continue;
+    }
 
-const num = 50;
-
-switch (num) {
-    case 49:
-        console.log('Неверно');
-        break;
-    case 100:
-        console.log('Неверно');
-        break;
-    case 50:
-        console.log('В точку');
-        break;
-    default:
-        console.log('Не в жтот раз');
-        break;
+    console.log(i);
 }
