@@ -1,24 +1,37 @@
 "use strict"
 
-// 1
-const numberOfFilms = +prompt("Сколько фильмов вы уже смотрели?", "");
+// Conditions
 
-// 2
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// if  (1) {
+//     console.log('Ok!');
+// } else {
+//     console.log("Error");
+// }
 
-// 3
-const a = prompt("Один из последних просметренных фильмов?", ""),
-      b = prompt("На сколько оцените его?", ""),
-      c = prompt("Один из последних просметренных фильмов?", ""),
-      d = prompt("На сколько оцените его?", "");
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// if (num < 49) {
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('Много');
+// } else {
+//     console.log('Ok!');
+// }
 
-console.log(personalMovieDB);
+// (num === 50) ? console.log('Ok!') : console.log('Error'); // Ternar operator
+
+const num = 50;
+
+switch (num) {
+    case 49:
+        console.log('Неверно');
+        break;
+    case 100:
+        console.log('Неверно');
+        break;
+    case 50:
+        console.log('В точку');
+        break;
+    default:
+        console.log('Не в жтот раз');
+        break;
+}
