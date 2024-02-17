@@ -1,52 +1,32 @@
 "use strict";
 
-// To String
- 
-// 1)
-console.log(typeof(String(null)));
-console.log(typeof(String(4)));
+// let x = 5; alert( x++ ); //'5'
 
-// 2)
-console.log(typeof(5 + ''));
+// console.log([] + false - null + true); //'NaN'
 
-const num = 5;
+// let y = 1;
+// let x = y = 2;
+// alert(x); // '2'
 
-console.log("https://vk.com/catalog/" + num);
+// console.log([] + 1 + 2); // '12'
 
-const fontSize = 26 + 'px';
+// alert( "1"[0] ); // '1'
 
-// To Number
+// console.log(2 && 1 && null && 0 && undefined); // 'null' 
+// И запинается на лжи
+// ИЛИ запинается на правде
 
-// 1)
-console.log(typeof(Number('4')));
+// console.log(!!( 1 && 2) === (1 && 2)); // 'false'
 
-// 2)
-console.log(typeof(+'5'));
+// alert( null || 2 && 3 || 4); // '3'
 
-// 3)
-console.log(typeof(parseInt("15px", 10)));
+// const a = [1, 2, 3];
+// const b = [1, 2, 3];
 
-// let answ = +prompt("Hello", "");
+// console.log(a == b); // 'false'
 
-//To Boolean
+// alert( +"Infinity" ); // 'Infinity'
 
-// 0, '', null, undefined, NaN;
+// console.log("Ежик" > "яблоко"); // 'false'
 
-let switcher = null;
-
-if (switcher) {
-    console.log('Working...');
-}
-
-switcher = 1;
-
-if (switcher) {
-    console.log('Working...');
-}
-
-// 2)
-
-console.log(typeof(Boolean(4)));
-
-// 3)
-console.log(typeof(!!"44444"));
+console.log(0 || "" || 2 || undefined || true || false);
