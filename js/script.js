@@ -1,32 +1,67 @@
-"use strict";
+// const box = document.getElementById('box'),
+//       btns = document.getElementsByTagName('button'),
+//       circles = document.getElementsByClassName('circle'),
+//       hearts = document.querySelectorAll('.heart'),
+//       oneHeart = document.querySelector('.heart');
 
-// let x = 5; alert( x++ ); //'5'
+// // box.style.backgroundColor = 'blue';
+// // box.style.width = '500px';
 
-// console.log([] + false - null + true); //'NaN'
+// box.style.cssText = 'background-color: blue; width: 500px;'
 
-// let y = 1;
-// let x = y = 2;
-// alert(x); // '2'
+// btns[1].style.borderRadius = '100%';
+// circles[0].style.backgroundColor = 'red';
 
-// console.log([] + 1 + 2); // '12'
+// // for (let i = 0; i < hearts.length; i++) {
+// //     hearts[i].style.backgroundColor = 'blue';
+// // }
 
-// alert( "1"[0] ); // '1'
+// hearts.forEach(item => {
+//     item.style.backgroundColor = 'blue';
+// });
 
-// console.log(2 && 1 && null && 0 && undefined); // 'null' 
-// И запинается на лжи
-// ИЛИ запинается на правде
+// const div = document.createElement('div');
+// // const text = document.createTextNode('Тут был я');
 
-// console.log(!!( 1 && 2) === (1 && 2)); // 'false'
+// div.classList.add('black');
 
-// alert( null || 2 && 3 || 4); // '3'
+// // document.querySelector('.wrapper').append(div);
 
-// const a = [1, 2, 3];
-// const b = [1, 2, 3];
+// // wrapper.prepend(div);
+// // wrapper.appendChile(div);
 
-// console.log(a == b); // 'false'
+// // hearts[0].before(div);
+// // hearts[0].after(div);
 
-// alert( +"Infinity" ); // 'Infinity'
+// // circles[0].remove();
 
-// console.log("Ежик" > "яблоко"); // 'false'
+// // hearts[0].replaceWith(circles[0]);
 
-console.log(0 || "" || 2 || undefined || true || false);
+// // wrapper.insertBefore(div, hearts[0]);
+// // wrapper.removeChild(hearts[0]);
+// // wrapper.replaceChild(circles[0], hearts[0]);
+
+// div.innerHTML = "Hello World!";         
+
+const box = document.getElementById('box'),
+      btns = document.getElementsByTagName('button'),
+      circles = document.getElementsByClassName('circle'),
+      hearts = document.querySelectorAll('.heart');
+
+box.style.cssText = 'background-color: blue; width: 500px;';
+btns[1].style.borderRadius = '100%';
+circles[0].style.backgroundColor = 'red';
+
+hearts.forEach(item => {
+    item.style.backgroundColor = 'blue';
+});
+
+const div = document.createElement('div');
+div.classList.add('black');
+document.querySelector('.wrapper').appendChild(div);
+
+// div.innerHTML = "<h1>Hello</h1>";
+
+div.textContent = "Hello";  
+
+div.insertAdjacentHTML("beforeend", '<h2>Hello</h2>');
